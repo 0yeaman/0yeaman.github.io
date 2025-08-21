@@ -41,6 +41,16 @@
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+        .project a.button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #2c3e50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
         footer {
             text-align: center;
             padding: 20px 0;
@@ -69,21 +79,59 @@
 
 <section id="projects">
     <h2>Projects</h2>
+
     <div class="project">
-        <h3>Real-Time Traffic Analysis</h3>
-        <p>A project focused on analyzing traffic patterns and optimizing emergency vehicle routes using Python and Big Data tools.</p>
+        <h3>iBrand</h3>
+        <p>
+            iBrand is a smart content generation platform that helps brands and social media marketers catch trends early and generate catchy, engaging posts in their own brand voice. 
+            It does this by scraping trending news, enriching the data, and streaming it through a big data pipeline where personalized social media content is generated using AI and NLP.
+        </p>
+        <a href="https://github.com/LCM-S25-3035/iBrand" class="button" target="_blank">View on GitHub</a>
     </div>
+
     <div class="project">
-        <h3>AI in Predictive Toxicology</h3>
-        <p>Using AI tools to predict drug toxicity early in the drug development process. Implemented with ML models on chemical data.</p>
+        <h3>Credit Card Fraud Detection</h3>
+        <p>
+            Our team built a fraud detection system that can analyze millions of credit card transactions and identify suspicious activity in real time. 
+            We used advanced machine learning models to recognize patterns of fraudulent behavior and compared them with normal transactions. 
+            The project included a simple dashboard where users can upload transactions or enter details to instantly check if a transaction is likely to be fraud. 
+            This demonstrates how big data and AI can protect customers and financial institutions from fraud.
+        </p>
+        <a href="https://github.com/Oyeamandeep/creditcard-fraud-pyspark" class="button" target="_blank">View on GitHub</a>
     </div>
-    <!-- Add more projects here if needed -->
+
+    <div class="project">
+        <h3>Heart Disease Detection using Machine Learning</h3>
+        <p>
+            We made a system that predicts whether a person may have heart disease by analyzing health information such as age, blood pressure, cholesterol, and exercise data. 
+            Using real patient datasets, we trained and compared different machine learning models to see which could provide the most accurate results. 
+            Our best models reached close to 90% accuracy, showing how AI can support doctors in identifying risks early and improving patient care.
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>Real-Time Traffic Analysis (RTTA)</h3>
+        <p>
+            RTTA focuses on analyzing traffic patterns, especially for emergency vehicles, to optimize routes in real time. 
+            Using Ontario 511, Google Maps Traffic API, and other open data sources, the project builds a data pipeline to monitor and predict traffic congestion, helping prioritize critical traffic.
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>AI in Predictive Toxicology (AIPT)</h3>
+        <p>
+            AIPT uses AI tools to predict drug toxicity early in the drug development process. 
+            Machine learning models analyze chemical structures and predict adverse drug reactions, helping researchers identify risky compounds before clinical trials.
+            Data sources include PubChem and Tox21, and the project leverages cloud platforms for scalable analysis.
+        </p>
+    </div>
+
 </section>
 
 <section id="contact">
     <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/username" target="_blank">linkedin.com/in/username</a></p>
+    <p>Email: <a href="mailto:oyeaman13@gmail.com">oyeaman13@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/amandeep-singh-bhawra" target="_blank">linkedin.com/in/amandeep-singh-bhawra</a></p>
 </section>
 
 <footer>
