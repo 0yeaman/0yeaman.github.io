@@ -1,143 +1,129 @@
-import React from "react";
-import { motion } from "framer-motion";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amandeep Singh - Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid white;
+    }
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #222;
+    }
+    .project {
+      background: white;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .project iframe {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+    }
+    a {
+      color: #4a90e2;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
 
-// Profile Image (Upload your own picture in /public/profile.jpg)
-import profilePic from "/profile.jpg";
+  <header>
+    <img src="profile.jpg" alt="Amandeep Singh">
+    <h1>Amandeep Singh</h1>
+    <p>Big Data Analytics | AI | Machine Learning</p>
+  </header>
 
-const Portfolio = () => {
-  return (
-    <div className="min-h-screen bg-gray-50 text-gray-900">
-      {/* Header Section */}
-      <header className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-12 shadow-lg">
-        <div className="container mx-auto text-center">
-          <motion.img
-            src={profilePic}
-            alt="Amandeep Singh"
-            className="w-32 h-32 rounded-full mx-auto border-4 border-white shadow-md"
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 1 }}
-          />
-          <h1 className="text-4xl font-bold mt-4">Amandeep Singh</h1>
-          <p className="text-lg mt-2">Big Data Analytics | AI | Machine Learning</p>
-        </div>
-      </header>
+  <div class="container">
+    <h2>Projects</h2>
 
-      {/* Projects Section */}
-      <section className="container mx-auto py-12 px-4">
-        <h2 className="text-3xl font-bold text-center mb-10">Projects</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          
-          {/* iBrand Project */}
-          <motion.div
-            className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl"
-            whileHover={{ scale: 1.05 }}
-          >
-            <h3 className="text-xl font-semibold">iBrand Project</h3>
-            <p className="mt-2 text-gray-600">
-              Containerized backend services with Docker for scalable deployment,
-              and integrated Kafka producers for real-time news article streaming.
-            </p>
-            <a
-              href="https://github.com/LCM-S25-3035/iBrand"
-              className="text-indigo-600 mt-4 inline-block"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub Link
-            </a>
-          </motion.div>
-
-          {/* Credit Card Fraud Detection */}
-          <motion.div
-            className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl"
-            whileHover={{ scale: 1.05 }}
-          >
-            <h3 className="text-xl font-semibold">Credit Card Fraud Detection</h3>
-            <p className="mt-2 text-gray-600">
-              Applied deep learning models to detect fraudulent transactions.
-              Built as part of Neural Networks & Deep Learning coursework.
-            </p>
-            <a
-              href="https://github.com/Oyeamandeep/creditcard-fraud-pyspark"
-              className="text-indigo-600 mt-4 inline-block"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub Link
-            </a>
-          </motion.div>
-
-          {/* Real-Time Traffic Analysis */}
-          <motion.div
-            className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl"
-            whileHover={{ scale: 1.05 }}
-          >
-            <h3 className="text-xl font-semibold">Real-Time Traffic Analysis (RTTA)</h3>
-            <p className="mt-2 text-gray-600">
-              Analyzed live traffic data focusing on emergency vehicles and priority traffic using 
-              Ontario 511, Metrolinx, and Toronto Open Data.
-            </p>
-          </motion.div>
-
-          {/* AI in Predictive Toxicology */}
-          <motion.div
-            className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl"
-            whileHover={{ scale: 1.05 }}
-          >
-            <h3 className="text-xl font-semibold">AI in Predictive Toxicology (AIPT)</h3>
-            <p className="mt-2 text-gray-600">
-              Built ML models to predict drug toxicity using PubChem and Tox21 datasets. 
-              Project guided by Johan Rodriguez, deployed on GCP.
-            </p>
-          </motion.div>
-
-          {/* Fire Ranger Robot */}
-          <motion.div
-            className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl"
-            whileHover={{ scale: 1.05 }}
-          >
-            <h3 className="text-xl font-semibold">Fire Ranger Robot</h3>
-            <p className="mt-2 text-gray-600">
-              Built on Jan 14, 2023. Inspired by Wall-E, this robot extinguishes fire 
-              via remote control and can access narrow spaces unsafe for humans.
-            </p>
-            <ul className="list-disc list-inside text-sm text-gray-500 mt-2">
-              <li>Cuts doors/obstacles to clear way</li>
-              <li>Extinguishes fire using onboard water</li>
-              <li>Multi-directional movement & arm control</li>
-              <li>Obstacle detection with speed reduction</li>
-              <li>Water level indicator, blinking eyes, alarm</li>
-            </ul>
-            <div className="mt-4">
-              <iframe
-                className="w-full h-48 rounded-lg"
-                src="https://www.youtube.com/embed/Sj__Mqav5lg"
-                title="Fire Ranger Robot"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Visualization Section */}
-      <section className="container mx-auto py-12 px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">Visualizations</h2>
-        <div className="flex justify-center">
-          <div className="bg-white shadow-lg rounded-xl p-6 w-full md:w-2/3 text-center">
-            <p className="text-gray-500">📊 Placeholder for charts and visualizations (add later)</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-800 text-gray-300 py-6 text-center">
-        <p>© {new Date().getFullYear()} Amandeep Singh. All Rights Reserved.</p>
-      </footer>
+    <div class="project">
+      <h3>iBrand</h3>
+      <p>
+        iBrand is a smart content generation platform that helps brands and social media marketers catch trends early 
+        and generate catchy posts in their own brand voice. 
+        <br>
+        <a href="https://github.com/LCM-S25-3035/iBrand" target="_blank">GitHub Link</a>
+      </p>
     </div>
-  );
-};
 
-export default Portfolio;
+    <div class="project">
+      <h3>Credit Card Fraud Detection</h3>
+      <p>
+        Built a fraud detection system that analyzes millions of transactions in real time using machine learning. 
+        <br>
+        <a href="https://github.com/Oyeamandeep/creditcard-fraud-pyspark" target="_blank">GitHub Link</a>
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Real-Time Traffic Analysis (RTTA)</h3>
+      <p>
+        Analyzed live traffic data focusing on emergency vehicles and priority traffic using Ontario 511, Metrolinx, and Toronto Open Data.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>AI in Predictive Toxicology (AIPT)</h3>
+      <p>
+        Built ML models to predict drug toxicity using PubChem and Tox21 datasets. Project deployed on GCP.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Fire Ranger Robot</h3>
+      <p>
+        Built on <b>14 January 2023</b>, inspired by Wall-E but with a different purpose: extinguishing fires via remote control in 
+        small spaces unsafe for humans.
+      </p>
+      <ul>
+        <li>Cuts doors or obstacles to clear the way</li>
+        <li>Extinguishes fire using onboard water</li>
+        <li>Moves forward, reverse, left & right; rotating arms</li>
+        <li>Water level indicator</li>
+        <li>Obstacle detection & speed reduction</li>
+        <li>Blinking eyes & alarm sound</li>
+      </ul>
+      <iframe src="https://www.youtube.com/embed/Sj__Mqav5lg" title="Fire Ranger Robot" allowfullscreen></iframe>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Amandeep Singh. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
