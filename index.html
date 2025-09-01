@@ -1,142 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amandeep Singh Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background-color: #2c3e50;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-        }
-        section {
-            padding: 50px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        h2 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-        .project {
-            background: #fff;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .project a.button {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 8px 15px;
-            background-color: #2c3e50;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background: #2c3e50;
-            color: #fff;
-            margin-top: 50px;
-        }
-    </style>
-</head>
-<body>
+import React from "react";
+import { motion } from "framer-motion";
 
-<header>
-    <h1>Amandeep Singh</h1>
-    <p>Personal Portfolio Website</p>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+// Profile Image (Upload your own picture in /public/profile.jpg)
+import profilePic from "/profile.jpg";
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I am Amandeep Singh, a Big Data Analytics student passionate about AI, Machine Learning, and Web Development. I build projects that solve real-world problems and love learning new technologies.</p>
-</section>
+const Portfolio = () => {
+  return (
+    <div className="min-h-screen bg-gray-50 text-gray-900">
+      {/* Header Section */}
+      <header className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-12 shadow-lg">
+        <div className="container mx-auto text-center">
+          <motion.img
+            src={profilePic}
+            alt="Amandeep Singh"
+            className="w-32 h-32 rounded-full mx-auto border-4 border-white shadow-md"
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1 }}
+          />
+          <h1 className="text-4xl font-bold mt-4">Amandeep Singh</h1>
+          <p className="text-lg mt-2">Big Data Analytics | AI | Machine Learning</p>
+        </div>
+      </header>
 
-<section id="projects">
-    <h2>Projects</h2>
+      {/* Projects Section */}
+      <section className="container mx-auto py-12 px-4">
+        <h2 className="text-3xl font-bold text-center mb-10">Projects</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          {/* iBrand Project */}
+          <motion.div
+            className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl"
+            whileHover={{ scale: 1.05 }}
+          >
+            <h3 className="text-xl font-semibold">iBrand Project</h3>
+            <p className="mt-2 text-gray-600">
+              Containerized backend services with Docker for scalable deployment,
+              and integrated Kafka producers for real-time news article streaming.
+            </p>
+            <a
+              href="https://github.com/LCM-S25-3035/iBrand"
+              className="text-indigo-600 mt-4 inline-block"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub Link
+            </a>
+          </motion.div>
 
-    <div class="project">
-        <h3>iBrand</h3>
-        <p>
-            iBrand is a smart content generation platform that helps brands and social media marketers catch trends early and generate catchy, engaging posts in their own brand voice. 
-            It does this by scraping trending news, enriching the data, and streaming it through a big data pipeline where personalized social media content is generated using AI and NLP.
-        </p>
-        <a href="https://github.com/LCM-S25-3035/iBrand" class="button" target="_blank">View on GitHub</a>
+          {/* Credit Card Fraud Detection */}
+          <motion.div
+            className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl"
+            whileHover={{ scale: 1.05 }}
+          >
+            <h3 className="text-xl font-semibold">Credit Card Fraud Detection</h3>
+            <p className="mt-2 text-gray-600">
+              Applied deep learning models to detect fraudulent transactions.
+              Built as part of Neural Networks & Deep Learning coursework.
+            </p>
+            <a
+              href="https://github.com/Oyeamandeep/creditcard-fraud-pyspark"
+              className="text-indigo-600 mt-4 inline-block"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub Link
+            </a>
+          </motion.div>
+
+          {/* Real-Time Traffic Analysis */}
+          <motion.div
+            className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl"
+            whileHover={{ scale: 1.05 }}
+          >
+            <h3 className="text-xl font-semibold">Real-Time Traffic Analysis (RTTA)</h3>
+            <p className="mt-2 text-gray-600">
+              Analyzed live traffic data focusing on emergency vehicles and priority traffic using 
+              Ontario 511, Metrolinx, and Toronto Open Data.
+            </p>
+          </motion.div>
+
+          {/* AI in Predictive Toxicology */}
+          <motion.div
+            className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl"
+            whileHover={{ scale: 1.05 }}
+          >
+            <h3 className="text-xl font-semibold">AI in Predictive Toxicology (AIPT)</h3>
+            <p className="mt-2 text-gray-600">
+              Built ML models to predict drug toxicity using PubChem and Tox21 datasets. 
+              Project guided by Johan Rodriguez, deployed on GCP.
+            </p>
+          </motion.div>
+
+          {/* Fire Ranger Robot */}
+          <motion.div
+            className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl"
+            whileHover={{ scale: 1.05 }}
+          >
+            <h3 className="text-xl font-semibold">Fire Ranger Robot</h3>
+            <p className="mt-2 text-gray-600">
+              Built on Jan 14, 2023. Inspired by Wall-E, this robot extinguishes fire 
+              via remote control and can access narrow spaces unsafe for humans.
+            </p>
+            <ul className="list-disc list-inside text-sm text-gray-500 mt-2">
+              <li>Cuts doors/obstacles to clear way</li>
+              <li>Extinguishes fire using onboard water</li>
+              <li>Multi-directional movement & arm control</li>
+              <li>Obstacle detection with speed reduction</li>
+              <li>Water level indicator, blinking eyes, alarm</li>
+            </ul>
+            <div className="mt-4">
+              <iframe
+                className="w-full h-48 rounded-lg"
+                src="https://www.youtube.com/embed/Sj__Mqav5lg"
+                title="Fire Ranger Robot"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Visualization Section */}
+      <section className="container mx-auto py-12 px-4">
+        <h2 className="text-3xl font-bold text-center mb-8">Visualizations</h2>
+        <div className="flex justify-center">
+          <div className="bg-white shadow-lg rounded-xl p-6 w-full md:w-2/3 text-center">
+            <p className="text-gray-500">📊 Placeholder for charts and visualizations (add later)</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-800 text-gray-300 py-6 text-center">
+        <p>© {new Date().getFullYear()} Amandeep Singh. All Rights Reserved.</p>
+      </footer>
     </div>
+  );
+};
 
-    <div class="project">
-        <h3>Credit Card Fraud Detection</h3>
-        <p>
-            Our team built a fraud detection system that can analyze millions of credit card transactions and identify suspicious activity in real time. 
-            We used advanced machine learning models to recognize patterns of fraudulent behavior and compared them with normal transactions. 
-            The project included a simple dashboard where users can upload transactions or enter details to instantly check if a transaction is likely to be fraud. 
-            This demonstrates how big data and AI can protect customers and financial institutions from fraud.
-        </p>
-        <a href="https://github.com/Oyeamandeep/creditcard-fraud-pyspark" class="button" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-        <h3>Heart Disease Detection using Machine Learning</h3>
-        <p>
-            We made a system that predicts whether a person may have heart disease by analyzing health information such as age, blood pressure, cholesterol, and exercise data. 
-            Using real patient datasets, we trained and compared different machine learning models to see which could provide the most accurate results. 
-            Our best models reached close to 90% accuracy, showing how AI can support doctors in identifying risks early and improving patient care.
-        </p>
-    </div>
-
-    <div class="project">
-        <h3>Real-Time Traffic Analysis (RTTA)</h3>
-        <p>
-            RTTA focuses on analyzing traffic patterns, especially for emergency vehicles, to optimize routes in real time. 
-            Using Ontario 511, Google Maps Traffic API, and other open data sources, the project builds a data pipeline to monitor and predict traffic congestion, helping prioritize critical traffic.
-        </p>
-    </div>
-
-    <div class="project">
-        <h3>AI in Predictive Toxicology (AIPT)</h3>
-        <p>
-            AIPT uses AI tools to predict drug toxicity early in the drug development process. 
-            Machine learning models analyze chemical structures and predict adverse drug reactions, helping researchers identify risky compounds before clinical trials.
-            Data sources include PubChem and Tox21, and the project leverages cloud platforms for scalable analysis.
-        </p>
-    </div>
-
-</section>
-
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:oyeaman13@gmail.com">oyeaman13@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/amandeep-singh-bhawra" target="_blank">linkedin.com/in/amandeep-singh-bhawra</a></p>
-</section>
-
-<footer>
-    <p>&copy; 2025 Amandeep Singh</p>
-</footer>
-
-</body>
-</html>
+export default Portfolio;
