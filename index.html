@@ -3,138 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amandeep Singh - Portfolio</title>
+  <title>Amandeep Singh's Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
+      background-color: #f9f9f9;
       color: #333;
       line-height: 1.6;
     }
     header {
-      background: #4a90e2;
-      color: white;
-      padding: 20px 0;
+      background: #2c3e50;
+      color: #fff;
+      padding: 2rem 1rem;
       text-align: center;
     }
-    header img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 4px solid white;
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
     }
-    .container {
-      width: 90%;
-      max-width: 1000px;
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
       margin: auto;
-      padding: 20px;
     }
-    h1, h2 {
-      color: #222;
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
     .project {
-      background: white;
-      margin: 20px 0;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
     }
-    .project iframe {
-      width: 100%;
-      height: 250px;
-      border-radius: 10px;
+    .project h3 {
+      margin: 0.3rem 0;
     }
     footer {
+      background: #2c3e50;
+      color: #fff;
       text-align: center;
-      padding: 20px;
-      background: #333;
-      color: white;
+      padding: 1.5rem;
+      margin-top: 2rem;
     }
-    a {
-      color: #4a90e2;
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      margin: 0 10px;
+      color: #fff;
       text-decoration: none;
+      font-size: 1.1rem;
+    }
+    .social-links img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="profile.jpg" alt="Amandeep Singh">
-    <h1>Amandeep Singh</h1>
-    <p>Big Data Analytics | AI | Machine Learning</p>
+    <h1>Amandeep Singh's Portfolio</h1>
+    <p>Welcome! I'm a Big Data Analyst and Electronics & Communication Engineer with a passion for data, AI, and innovative technology solutions.</p>
   </header>
 
-  <div class="container">
+  <section>
     <h2>Projects</h2>
 
     <div class="project">
-      <h3>iBrand</h3>
-      <p>
-        iBrand is a smart content generation platform that helps brands and social media marketers catch trends early 
-        and generate catchy posts in their own brand voice. 
-        <br>
-        <a href="https://github.com/LCM-S25-3035/iBrand" target="_blank">GitHub Link</a>
-      </p>
+      <h3>Text Analysis with Machine Learning</h3>
+      <p>Performed text classification and sentiment analysis using Logistic Regression, SVM, and Random Forest. Conducted detailed exploratory data analysis (EDA) to uncover key patterns and insights. Implemented visualization techniques with Matplotlib, Seaborn, and Plotly for better interpretation of results.</p>
     </div>
 
     <div class="project">
-      <h3>Credit Card Fraud Detection</h3>
-      <p>
-        Built a fraud detection system that analyzes millions of transactions in real time using machine learning. 
-        <br>
-        <a href="https://github.com/Oyeamandeep/creditcard-fraud-pyspark" target="_blank">GitHub Link</a>
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>Real-Time Traffic Analysis (RTTA)</h3>
-      <p>
-        Analyzed live traffic data focusing on emergency vehicles and priority traffic using Ontario 511, Metrolinx, and Toronto Open Data.
-        <br>
-        <a href="https://github.com/Andressanta09/Project_Aplication_Designe" target="_blank">GitHub Link</a>
-      </p>
+      <h3>Car Sales Analysis with PySpark</h3>
+      <p>Analyzed large datasets on car sales using PySpark and Hive. Developed ETL pipelines for efficient data processing and transformations. Extracted meaningful trends in sales performance and presented results using visualizations for data-driven decision-making.</p>
     </div>
 
     <div class="project">
       <h3>AI in Predictive Toxicology (AIPT)</h3>
-      <p>
-        Built ML models to predict drug toxicity using PubChem and Tox21 datasets. Project deployed on GCP.
-        <br>
-        <a href="https://github.com/Jrodriguez8004/AI-project-Predictive-Toxicology-" target="_blank">GitHub Link</a>
-      </p>
+      <p>Built AI-powered predictive models for early detection of drug toxicity. Leveraged datasets like PubChem and Tox21 to train and evaluate models. Applied feature engineering and Random Forest to assess risks, enhancing efficiency in drug development processes.</p>
     </div>
 
     <div class="project">
-      <h3>Fire Ranger Robot</h3>
-      <p>
-        Developed a robot to detect and extinguish fires in small spaces unsafe for humans. Built on 14 January 2023 and inspired by Wall-E.
-      </p>
-      <iframe src="https://www.youtube.com/embed/Sj__Mqav5lg" title="Fire Ranger Robot" allowfullscreen></iframe>
+      <h3>Real-Time Traffic Analysis (RTTA)</h3>
+      <p>Designed a real-time traffic analysis system focusing on emergency and priority vehicles. Integrated data sources like Ontario 511 and Metrolinx. Developed models and dashboards to improve traffic management and safety in urban environments.</p>
     </div>
 
     <div class="project">
-      <h3>TO DO LIST MANAGER</h3>
-      <p>
-        Created a command line-based To-Do List Manager that allows users to add, remove, view, and save tasks with file I/O.  
-        Includes features like marking tasks completed, sorting, and continuous interaction via loops and conditions.  
-        <br>
-        <a href="https://github.com/c0927648/AML_1214_Project" target="_blank">GitHub Link</a>
-      </p>
+      <h3>iBrand Project</h3>
+      <p>Contributed to containerizing backend services with Docker for scalable deployment. Integrated Kafka producers for real-time article streaming. Supported development of a robust data pipeline, ensuring seamless processing of real-time brand-related data.</p>
     </div>
-
-  </div>
+  </section>
 
   <footer>
-    <p>© 2025 Amandeep Singh. All Rights Reserved.</p>
-    <p>
-      <a href="mailto:oyeaman13@gmail.com">oyeaman13@gmail.com</a> |
-      <a href="https://www.linkedin.com/in/amandeep-singh-bhawra" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/0yeaman" target="_blank">GitHub</a> |
-      <a href="https://instagram.com/0yeaman_" target="_blank">Instagram</a>
-    </p>
+    <p>📍 Mississauga, ON, Canada</p>
+    <div class="social-links">
+      <a href="https://github.com/0yeaman" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub"> GitHub</a>
+      <a href="https://www.linkedin.com/in/amandeep-singh" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"> LinkedIn</a>
+      <a href="https://www.instagram.com/0yeaman_/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"> Instagram</a>
+    </div>
   </footer>
-
 </body>
 </html>
