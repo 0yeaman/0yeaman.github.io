@@ -9,144 +9,144 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
+      background-color: #f4f4f9;
       color: #333;
-      line-height: 1.6;
     }
     header {
-      background: #4a90e2;
-      color: white;
-      padding: 20px 0;
+      background: #333;
+      color: #fff;
+      padding: 20px;
       text-align: center;
     }
     header img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      border: 4px solid white;
+      margin-bottom: 15px;
     }
-    .container {
-      width: 90%;
-      max-width: 1000px;
+    header h1 {
+      margin: 10px 0;
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.3em;
+      margin: 5px 0;
+    }
+    section {
+      padding: 30px;
+      max-width: 900px;
       margin: auto;
-      padding: 20px;
     }
-    h1, h2 {
-      color: #222;
+    h2 {
+      font-size: 2em;
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
     }
     .project {
-      background: white;
-      margin: 20px 0;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 25px;
     }
-    .project iframe {
-      width: 100%;
-      height: 250px;
-      border-radius: 10px;
+    .project h3 {
+      font-size: 1.6em;
+      margin-bottom: 10px;
     }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #333;
-      color: white;
+    .project p {
+      font-size: 1.2em;
+      margin: 8px 0;
+      line-height: 1.5;
     }
-    a {
-      color: #4a90e2;
+    .project a {
+      color: #0077cc;
       text-decoration: none;
+      font-size: 1.1em;
     }
-    .social-icons img {
-      width: 18px;
-      height: 18px;
+    .project a:hover {
+      text-decoration: underline;
+    }
+    .contact {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 25px;
+    }
+    .contact p {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+    .contact a {
+      color: #00aced;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.2em;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    .social-icon {
+      width: 20px;
+      height: 20px;
       vertical-align: middle;
-      margin-right: 6px;
+      margin-right: 8px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="profile.jpg" alt="Amandeep Singh">
+    <img src="profile.png" alt="Amandeep Singh">
     <h1>Amandeep Singh's Portfolio</h1>
-    <p>Welcome! I'm a Big Data Analyst and Electronics & Communication Engineer passionate about data, technology, and building innovative solutions.</p>
+    <p>Welcome! I'm a Big Data Analyst and Electronics & Communication Engineer passionate about AI, Machine Learning, and innovative technologies.</p>
   </header>
 
-  <div class="container">
+  <section>
     <h2>Projects</h2>
 
     <div class="project">
-      <h3>iBrand</h3>
-      <p>
-        iBrand is a smart content generation platform that helps brands and social media marketers catch trends early 
-        and generate engaging posts in their brand voice. It enriches trending news and streams it through AI pipelines 
-        to create personalized, impactful content.  
-        <br>
-        <a href="https://github.com/LCM-S25-3035/iBrand" target="_blank">GitHub Link</a>
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>Credit Card Fraud Detection</h3>
-      <p>
-        A real-time fraud detection system that analyzes millions of transactions using advanced ML models.  
-        It recognizes patterns of fraudulent behavior and compares them with normal transactions, ensuring secure payments.  
-        <br>
-        <a href="https://github.com/Oyeamandeep/creditcard-fraud-pyspark" target="_blank">GitHub Link</a>
-      </p>
-    </div>
-
-    <div class="project">
       <h3>Real-Time Traffic Analysis (RTTA)</h3>
-      <p>
-        Analyzed live traffic data to prioritize emergency vehicles using Ontario 511, Metrolinx, and Toronto Open Data.  
-        Designed pipelines to extract insights in real time and optimize traffic management for safer roads.  
-        <br>
-        <a href="https://github.com/Andressanta09/Project_Aplication_Designe" target="_blank">GitHub Link</a>
-      </p>
+      <p>Built a system to analyze traffic data in real-time for emergency and priority vehicles. Leveraged Ontario 511, Metrolinx, and Google Maps Traffic API for insights.</p>
+      <a href="https://github.com/0yeaman/RTTA" target="_blank">View on GitHub</a>
     </div>
 
     <div class="project">
       <h3>AI in Predictive Toxicology (AIPT)</h3>
-      <p>
-        Built ML models to predict drug toxicity using PubChem and Tox21 datasets, achieving high accuracy.  
-        Project deployed on Google Cloud for scalable research in toxicology and drug safety evaluation.  
-        <br>
-        <a href="https://github.com/Jrodriguez8004/AI-project-Predictive-Toxicology-" target="_blank">GitHub Link</a>
-      </p>
+      <p>Developed AI models using PubChem and Tox21 data to predict drug toxicity at an early stage. Applied machine learning for pharmaceutical safety analysis.</p>
+      <a href="https://github.com/0yeaman/AIPT" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project">
+      <h3>iBrand Project</h3>
+      <p>Containerized backend services with Docker and integrated Kafka producers for real-time news article streaming. Built a scalable, high-performance deployment pipeline.</p>
+      <a href="https://github.com/0yeaman/ibrand" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project">
+      <h3>To-Do List App</h3>
+      <p>A simple interactive To-Do List web app allowing users to add, manage, and delete tasks. Designed with a clean interface for smooth user experience.</p>
+      <a href="https://github.com/0yeaman/todo-list" target="_blank">View on GitHub</a>
     </div>
 
     <div class="project">
       <h3>Fire Ranger Robot</h3>
-      <p>
-        A remote-controlled robot designed to detect and extinguish fires in small, unsafe areas for humans.  
-        Inspired by Wall-E, built on 14 January 2023, featuring obstacle detection, alarms, and water spray system.  
-      </p>
-      <iframe src="https://www.youtube.com/embed/Sj__Mqav5lg" title="Fire Ranger Robot" allowfullscreen></iframe>
+      <p>A robot designed for fire detection and extinguishing, integrating electronics and sensors for emergency response automation.</p>
+      <a href="https://github.com/0yeaman/fire-ranger" target="_blank">View on GitHub</a>
     </div>
 
-    <div class="project">
-      <h3>TO DO LIST MANAGER</h3>
-      <p>
-        A command-line task manager built with Python, enabling users to add, remove, view, and save tasks with file I/O.  
-        Features include task completion tracking, sorting, and seamless loading from saved files for persistence.  
-        <br>
-        <a href="https://github.com/c0927648/AML_1214_Project" target="_blank">GitHub Link</a>
-      </p>
-    </div>
+  </section>
 
-  </div>
-
-  <footer>
-    <p>© 2025 Amandeep Singh. All Rights Reserved.</p>
-    <p>Mississauga, ON, Canada</p>
-    <p class="social-icons">
-      <a href="mailto:oyeaman13@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png">oyeaman13@gmail.com</a> |
-      <a href="https://www.linkedin.com/in/amandeep-singh-bhawra" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png">LinkedIn</a> |
-      <a href="https://github.com/0yeaman" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png">GitHub</a> |
-      <a href="https://instagram.com/0yeaman_" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">Instagram</a>
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>📍 Mississauga, ON, Canada</p>
+    <p>
+      <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+      <a href="https://github.com/0yeaman" target="_blank">GitHub</a>
     </p>
-  </footer>
-
+    <p>
+      <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+      <a href="https://www.linkedin.com/in/amandeep-singh-96a573299/" target="_blank">LinkedIn</a>
+    </p>
+    <p>
+      <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      <a href="https://www.instagram.com/0yeaman_" target="_blank">@0yeaman_</a>
+    </p>
+  </section>
 </body>
 </html>
