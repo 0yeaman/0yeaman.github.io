@@ -3,112 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amandeep Singh's Portfolio</title>
+  <title>Amandeep Singh Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f9;
+      background: #f4f4f4;
       color: #333;
     }
-    /* Navigation */
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      position: relative;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 10px;
+    }
     nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      background: #333;
-      width: 100%;
-      padding: 15px 20px;
-      display: flex;
-      justify-content: flex-start;
-      gap: 25px;
-      z-index: 1000;
+      position: absolute;
+      top: 20px;
+      left: 20px;
     }
     nav a {
       color: #fff;
       text-decoration: none;
-      font-size: 1.2em;
-      font-weight: bold;
+      font-size: 18px;
+      margin-right: 15px;
     }
     nav a:hover {
       text-decoration: underline;
     }
-
-    header {
-      background: #444;
-      color: #fff;
-      text-align: center;
-      padding: 100px 20px 50px;
-    }
-    header img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-      border: 4px solid #fff;
-    }
-    header h1 {
-      margin: 10px 0;
-      font-size: 2.5em;
-    }
-    header p {
-      font-size: 1.2em;
-      max-width: 800px;
-      margin: 10px auto;
-      line-height: 1.6;
-    }
     section {
-      padding: 50px 20px;
       max-width: 1000px;
-      margin: auto;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      font-size: 18px;
     }
-    h2 {
-      font-size: 2.2em;
-      border-bottom: 2px solid #333;
-      padding-bottom: 10px;
-      margin-bottom: 25px;
+    h1, h2, h3 {
+      color: #222;
     }
-    .project {
-      margin-bottom: 35px;
+    ul {
+      list-style: none;
+      padding: 0;
     }
-    .project h3 {
-      font-size: 1.6em;
-      margin-bottom: 10px;
-    }
-    .project p {
-      font-size: 1.2em;
-      margin: 8px 0;
+    ul li {
+      margin-bottom: 20px;
       line-height: 1.6;
-    }
-    .project a {
-      color: #0077cc;
-      text-decoration: none;
-      font-size: 1.1em;
-    }
-    .project a:hover {
-      text-decoration: underline;
     }
     .contact {
-      background: #333;
-      color: #fff;
       text-align: center;
-      padding: 40px 20px;
-    }
-    .contact p {
-      margin: 12px 0;
-      font-size: 1.2em;
     }
     .contact a {
-      color: #00aced;
       text-decoration: none;
+      color: #333;
+      font-size: 18px;
       margin: 0 10px;
-      font-size: 1.2em;
     }
     .contact a:hover {
-      text-decoration: underline;
+      color: #0073e6;
     }
-    .social-icon {
+    .social-icons img {
       width: 20px;
       height: 20px;
       vertical-align: middle;
@@ -117,87 +81,73 @@
   </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects/Experience</a>
-    <a href="#contact">Contact</a>
-  </nav>
 
-  <!-- Header / About -->
-  <header id="about">
-    <img src="profile.png" alt="Amandeep Singh">
+  <header>
+    <nav>
+      <a href="#projects">Projects</a>
+    </nav>
+    <img src="profile.jpg" alt="Amandeep Singh">
     <h1>Amandeep Singh's Portfolio</h1>
-    <p>
-      Welcome! I'm Amandeep Singh, a Data Analyst and Electronics & Communication Engineer passionate about transforming raw data into meaningful insights. 
-      With a strong foundation in SQL, Python, and visualization tools like Power BI and Tableau, I specialize in building real-time data applications, 
-      predictive models, and interactive dashboards. 
-    </p>
-    <p>
-      Currently pursuing a Postgraduate Diploma in Big Data Analytics from Lambton College, Canada, I bring proven experience in analyzing mortgage 
-      rates, customer sales trends, and developing AI-powered systems like face detection and fire ranger robotics. Each project in this portfolio 
-      reflects my dedication to using data and technology to solve real-world challenges.
-    </p>
+    <p>Welcome! I'm Amandeep Singh, a Data Analyst passionate about transforming raw data into meaningful insights. 
+       With a strong foundation in SQL, Python, and visualization tools like Power BI and Tableau, 
+       I specialize in building real-time data applications, predictive models, and interactive dashboards. 
+       I bring proven experience in analyzing mortgage rates, customer sales trends, and developing AI-powered 
+       systems like face detection and fire ranger robotics.</p>
   </header>
 
-  <!-- Projects -->
   <section id="projects">
     <h2>Projects & Experience</h2>
-
-    <div class="project">
-      <h3>Real-Time Traffic Analysis (RTTA)</h3>
-      <p>Built a system to analyze traffic data in real-time for emergency and priority vehicles. Leveraged Ontario 511, Metrolinx, and Google Maps Traffic API for insights.</p>
-      <a href="https://github.com/0yeaman/RTTA" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>AI in Predictive Toxicology (AIPT)</h3>
-      <p>Developed AI models using PubChem and Tox21 data to predict drug toxicity at an early stage. Applied machine learning for pharmaceutical safety analysis.</p>
-      <a href="https://github.com/0yeaman/AIPT" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>iBrand Project</h3>
-      <p>Containerized backend services with Docker and integrated Kafka producers for real-time news article streaming. Built a scalable, high-performance deployment pipeline.</p>
-      <a href="https://github.com/LCM-S25-3035/iBrand" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>Credit Card Fraud Detection</h3>
-      <p>Implemented a fraud detection model using PySpark to classify fraudulent transactions. Designed data pipelines and applied machine learning for real-time analysis.</p>
-      <a href="https://github.com/Oyeamandeep/creditcard-fraud-pyspark" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>To-Do List App</h3>
-      <p>A simple interactive To-Do List web app allowing users to add, manage, and delete tasks. Designed with a clean interface for smooth user experience.</p>
-      <a href="https://github.com/0yeaman/todo-list" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>Fire Ranger Robot</h3>
-      <p>A robot designed for fire detection and extinguishing, integrating electronics and sensors for emergency response automation.</p>
-      <a href="https://github.com/0yeaman/fire-ranger" target="_blank">View on GitHub</a>
-    </div>
-
+    <ul>
+      <li>
+        <strong>Real-Time Traffic Analysis (RTTA)</strong><br>
+        Developed a system to analyze and visualize live traffic data with a focus on emergency vehicles. 
+        Integrated multiple data sources including Ontario 511 and Google Maps API to predict congestion 
+        and optimize routing in real-time.
+      </li>
+      <li>
+        <strong>AI in Predictive Toxicology (AIPT)</strong><br>
+        Built AI models to predict drug toxicity during early development phases. 
+        Leveraged PubChem and Tox21 datasets with machine learning for toxicity prediction, 
+        supporting safer drug discovery processes.
+      </li>
+      <li>
+        <strong>Credit Card Fraud Detection</strong> (<a href="https://github.com/Oyeamandeep/creditcard-fraud-pyspark" target="_blank">GitHub</a>)<br>
+        Implemented machine learning models with PySpark to detect fraudulent credit card transactions. 
+        Focused on feature engineering and class imbalance handling to improve prediction accuracy.
+      </li>
+      <li>
+        <strong>iBrand Project</strong> (<a href="https://github.com/LCM-S25-3035/iBrand" target="_blank">GitHub</a>)<br>
+        Contributed to backend development by containerizing services with Docker and integrating Kafka producers 
+        for real-time article streaming in a scalable environment.
+      </li>
+      <li>
+        <strong>Face Recognition System</strong><br>
+        Designed a multi-class face classification system using transfer learning (MobileNetV2) and traditional ML models. 
+        Built a Streamlit interface for deployment and real-time user interaction.
+      </li>
+      <li>
+        <strong>Fire Ranger Robot</strong><br>
+        Built a robotics system capable of detecting and extinguishing fire in real-time. 
+        Combined sensors, robotics control, and AI-powered decision-making for hazard management.
+      </li>
+      <li>
+        <strong>To-Do List Application</strong><br>
+        Created a simple web-based task management system to demonstrate CRUD operations with a clean, user-friendly interface.
+      </li>
+    </ul>
   </section>
 
-  <!-- Contact -->
-  <section class="contact" id="contact">
+  <section class="contact">
     <h2>Contact Me</h2>
     <p>📍 Mississauga, ON, Canada</p>
-    <p>
-      <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
-      <a href="https://github.com/0yeaman" target="_blank">GitHub</a>
-    </p>
-    <p>
-      <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
-      <a href="https://www.linkedin.com/in/amandeep-singh-96a573299/" target="_blank">LinkedIn</a>
-    </p>
-    <p>
-      <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-      <a href="https://www.instagram.com/0yeaman_" target="_blank">@0yeaman_</a>
-    </p>
+    <div class="social-icons">
+      <p>
+        <a href="https://github.com/0yeaman" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub"> GitHub</a>
+        <a href="https://linkedin.com/in/0yeaman" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn"> LinkedIn</a>
+        <a href="https://instagram.com/0yeaman_" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram"> Instagram</a>
+      </p>
+    </div>
   </section>
+
 </body>
 </html>
