@@ -29,13 +29,13 @@
     nav {
       position: absolute;
       top: 20px;
-      left: 20px;
+      right: 20px;
     }
     nav a {
       color: #fff;
       text-decoration: none;
       font-size: 18px;
-      margin-right: 15px;
+      margin-left: 15px;
     }
     nav a:hover {
       text-decoration: underline;
@@ -59,6 +59,12 @@
     ul li {
       margin-bottom: 20px;
       line-height: 1.6;
+    }
+    .intro-text {
+      font-size: 22px;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto;
     }
     .contact {
       text-align: center;
@@ -84,15 +90,19 @@
 
   <header>
     <nav>
+      <a href="#about">About</a>
       <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
     <img src="profile.jpg" alt="Amandeep Singh">
     <h1>Amandeep Singh's Portfolio</h1>
-    <p>Welcome! I'm Amandeep Singh, a Data Analyst passionate about transforming raw data into meaningful insights. 
-       With a strong foundation in SQL, Python, and visualization tools like Power BI and Tableau, 
-       I specialize in building real-time data applications, predictive models, and interactive dashboards. 
-       I bring proven experience in analyzing mortgage rates, customer sales trends, and developing AI-powered 
-       systems like face detection and fire ranger robotics.</p>
+    <p class="intro-text">
+      Welcome! I'm Amandeep Singh, a Data Analyst passionate about transforming raw data into meaningful insights. 
+      With a strong foundation in SQL, Python, and visualization tools like Power BI and Tableau, 
+      I specialize in building real-time data applications, predictive models, and interactive dashboards. 
+      I bring proven experience in analyzing mortgage rates, customer sales trends, and developing AI-powered 
+      systems like face detection and fire ranger robotics.
+    </p>
   </header>
 
   <section id="projects">
@@ -126,18 +136,19 @@
         Built a Streamlit interface for deployment and real-time user interaction.
       </li>
       <li>
+        <strong>To-Do List Application</strong> (<a href="https://github.com/c0927648/AML_1214_Project" target="_blank">GitHub</a>)<br>
+        Created a command line-based To-Do List Manager that allows users to add, remove, view, and save tasks. 
+        Implemented file I/O for task persistence and advanced features like marking tasks as completed and sorting by status.
+      </li>
+      <li>
         <strong>Fire Ranger Robot</strong><br>
         Built a robotics system capable of detecting and extinguishing fire in real-time. 
         Combined sensors, robotics control, and AI-powered decision-making for hazard management.
       </li>
-      <li>
-        <strong>To-Do List Application</strong><br>
-        Created a simple web-based task management system to demonstrate CRUD operations with a clean, user-friendly interface.
-      </li>
     </ul>
   </section>
 
-  <section class="contact">
+  <section id="contact" class="contact">
     <h2>Contact Me</h2>
     <p>📍 Mississauga, ON, Canada</p>
     <div class="social-icons">
