@@ -1,160 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="Amandeep Singh Portfolio" />
-  <meta name="author" content="Amandeep Singh" />
-  <title>Amandeep Singh's Portfolio</title>
-  <!-- Font Awesome -->
-  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" />
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amandeep Singh Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body { font-family: 'Lato', sans-serif; }
-    .masthead {
-      background-color: #0073e6;
-      padding-top: 100px;
-      padding-bottom: 50px;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
     }
-    .masthead img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      border: 4px solid white;
+    header {
+      background: #444;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
     }
-    .masthead-heading { font-size: 2.8rem; font-weight: 700; }
-    .masthead-subheading { font-size: 1.3rem; max-width: 900px; }
-    .portfolio .portfolio-item {
-      position: relative;
+    header .social-icons a {
+      color: #fff;
+      margin-right: 15px;
+      font-size: 20px;
+      text-decoration: none;
+    }
+    header nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header nav a:hover {
+      text-decoration: underline;
+    }
+    .intro {
+      text-align: center;
+      padding: 60px 20px;
+      background: #007BFF;
+      color: #fff;
+    }
+    .intro h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .intro p {
+      font-size: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    section h2 {
+      text-align: center;
       margin-bottom: 30px;
+      font-size: 32px;
     }
-    .portfolio-item img {
-      border-radius: 8px;
-      max-height: 250px;
-      object-fit: cover;
-    }
-    .divider-custom {
-      margin: 1.5rem 0;
+    .project {
       display: flex;
       align-items: center;
-      justify-content: center;
+      margin-bottom: 50px;
+      gap: 30px;
+      flex-wrap: wrap;
     }
-    .divider-custom-line {
-      width: 100px;
-      height: 1px;
-      background-color: #2c3e50;
-      margin: 0 10px;
+    .project img {
+      width: 350px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
-    .divider-custom-icon { color: #2c3e50; font-size: 1.5rem; }
+    .project-details {
+      max-width: 700px;
+    }
+    .project-details h3 {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+    .project-details p {
+      font-size: 18px;
+    }
+    .project-details a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #007BFF;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .project-details a:hover {
+      background: #0056b3;
+    }
+    footer {
+      background: #444;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
   </style>
 </head>
-<body id="page-top">
+<body>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="#page-top">Amandeep Singh</a>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link py-3 px-3 rounded" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link py-3 px-3 rounded" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link py-3 px-3 rounded" href="#contact">Contact</a></li>
-        </ul>
-      </div>
+  <header>
+    <div class="social-icons">
+      <a href="https://github.com/0yeaman" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/amandeepsingh" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
-  </nav>
-
-  <!-- Masthead -->
-  <header class="masthead text-white text-center">
-    <div class="container d-flex align-items-center flex-column">
-      <img src="profile.jpg" alt="Amandeep Singh" />
-      <h1 class="masthead-heading text-uppercase mt-3">Amandeep Singh's Portfolio</h1>
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-        <div class="divider-custom-line"></div>
-      </div>
-      <p class="masthead-subheading font-weight-light">
-        Welcome! I'm Amandeep Singh, a Data Analyst passionate about transforming raw data into meaningful insights. 
-        With a strong foundation in SQL, Python, and visualization tools like Power BI and Tableau, I specialize in building 
-        real-time applications, predictive models, and interactive dashboards. My projects span mortgage rate analysis, 
-        fraud detection, and AI-powered systems such as face recognition and fire ranger robotics.
-      </p>
-    </div>
+    <nav>
+      <a href="#projects">PROJECTS</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
   </header>
 
-  <!-- Projects -->
-  <section class="page-section portfolio" id="projects">
-    <div class="container">
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projects</h2>
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <!-- Example project layout -->
-      <div class="row justify-content-center mb-5">
-        <div class="col-md-6">
-          <div class="portfolio-item mx-auto">
-            <img class="img-fluid" src="https://miro.medium.com/v2/resize:fit:1200/1*5hks5c7coEa_TvXSLKfu2A.jpeg" alt="RTTA" />
-          </div>
-        </div>
-        <div class="col-md-6 d-flex align-items-center flex-column">
-          <h5>Real-Time Traffic Analysis (RTTA)</h5>
-          <p class="text-muted">
-            Developed a system to analyze and visualize live traffic data with a focus on emergency vehicles. 
-            Integrated Ontario 511 and Google Maps API to predict congestion and optimize routing in real-time.
-          </p>
-          <a class="btn btn-outline-dark" href="https://github.com/0yeaman/RTTA" target="_blank"><i class="fas fa-rocket me-2"></i>View Project</a>
-        </div>
-      </div>
-
-      <!-- Repeat similar blocks for other projects -->
-      <!-- Example: AI in Predictive Toxicology, Credit Card Fraud Detection, iBrand, Face Recognition, To-Do List, Fire Ranger Robot -->
-
-    </div>
+  <section class="intro">
+    <h1>Welcome! I'm Amandeep Singh</h1>
+    <p>
+      A Data Analyst passionate about transforming raw data into meaningful insights.  
+      With a strong foundation in SQL, Python, and visualization tools like Power BI and Tableau,  
+      I specialize in building real-time data applications, predictive models, and interactive dashboards.  
+      I bring proven experience in analyzing mortgage rates, customer sales trends, and developing AI-powered systems  
+      such as face recognition and fire ranger robotics.
+    </p>
   </section>
 
-  <!-- About -->
-  <section class="page-section bg-primary text-white mb-0" id="about">
-    <div class="container text-center">
-      <h2 class="text-uppercase">About</h2>
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-        <div class="divider-custom-line"></div>
+  <section id="projects">
+    <h2>PROJECTS</h2>
+
+    <div class="project">
+      <img src="images/ibrand.jpg" alt="iBrand Project">
+      <div class="project-details">
+        <h3>iBrand Project</h3>
+        <p>Containerized backend services with Docker for scalable deployment and integrated Kafka producers for real-time news article streaming.</p>
+        <a href="#">View Project</a>
       </div>
-      <p class="lead">
-        Data Analyst and Electronics & Communication Engineer with experience across predictive modeling, 
-        real-time analytics, and AI-powered solutions. Skilled in SQL, Python, Spark, Tableau, and cloud platforms.
-      </p>
     </div>
+
+    <div class="project">
+      <img src="images/fraud.jpg" alt="Fraud Detection">
+      <div class="project-details">
+        <h3>Credit Card Fraud Detection</h3>
+        <p>Developed fraud detection models using neural networks to identify suspicious transactions and improve financial security.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="images/face.jpg" alt="Face Recognition">
+      <div class="project-details">
+        <h3>Face Recognition System</h3>
+        <p>Implemented a multi-class face classification system using MobileNetV2 and deployed it with Streamlit for real-time recognition.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="images/traffic.jpg" alt="RTTA">
+      <div class="project-details">
+        <h3>Real-Time Traffic Analysis (RTTA)</h3>
+        <p>Developed a system to analyze and visualize live traffic data, focusing on emergency vehicles, using Ontario 511 and Google Maps API.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="images/aipt.jpg" alt="AIPT">
+      <div class="project-details">
+        <h3>AI in Predictive Toxicology (AIPT)</h3>
+        <p>Built AI tools to predict drug toxicity early in drug development using PubChem and Tox21 datasets with Google Cloud Platform.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="images/todo.jpg" alt="To-Do List App">
+      <div class="project-details">
+        <h3>To-Do List App</h3>
+        <p>Created a responsive To-Do List web application with task management features for productivity and planning.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="images/fire.jpg" alt="Fire Ranger Robotics">
+      <div class="project-details">
+        <h3>Fire Ranger Robotics</h3>
+        <p>Designed and developed a robotic fire ranger capable of detecting and extinguishing fire using sensor technology.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+
   </section>
 
-  <!-- Contact -->
-  <section class="page-section" id="contact">
-    <div class="container text-center">
-      <h2 class="text-uppercase text-secondary mb-0">Contact Me</h2>
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-        <div class="divider-custom-line"></div>
-      </div>
-      <p class="lead">📍 Mississauga, ON, Canada</p>
-      <p>
-        <a href="https://github.com/0yeaman" target="_blank"><i class="fab fa-github"></i> GitHub</a> | 
-        <a href="https://linkedin.com/in/0yeaman" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> | 
-        <a href="https://instagram.com/0yeaman_" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-      </p>
-    </div>
+  <section id="about">
+    <h2>ABOUT</h2>
+    <p style="text-align:center; max-width:800px; margin:auto; font-size:18px;">
+      I’m currently pursuing Big Data Analytics at Lambton College, Mississauga.  
+      I have experience in AI, ML, and data engineering tools, along with projects in finance, healthcare, and real-time systems.
+    </p>
   </section>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <section id="contact">
+    <h2>CONTACT</h2>
+    <p style="text-align:center; font-size:18px;">
+      You can reach me via <a href="mailto:your.email@example.com">Email</a> or connect with me on  
+      <a href="https://www.linkedin.com/in/amandeepsingh" target="_blank">LinkedIn</a>.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Amandeep Singh. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
