@@ -4,231 +4,161 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amandeep Singh Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
     }
     header {
-      background: #444;
+      background: #222;
       color: #fff;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 40px;
-    }
-    header .social-icons a {
-      color: #fff;
-      margin-right: 15px;
-      font-size: 20px;
-      text-decoration: none;
-    }
-    header nav a {
-      color: #fff;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    header nav a:hover {
-      text-decoration: underline;
-    }
-    .intro {
+      padding: 20px 0;
       text-align: center;
-      padding: 60px 20px;
-      background: #007BFF;
+      position: relative;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 10px;
+    }
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    nav a {
       color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      margin-left: 15px;
     }
-    .intro h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-    .intro p {
-      font-size: 20px;
-      max-width: 900px;
-      margin: auto;
+    nav a:hover {
+      text-decoration: underline;
     }
     section {
-      padding: 40px 20px;
-    }
-    section h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 32px;
-    }
-    .project {
-      display: flex;
-      align-items: center;
-      margin-bottom: 50px;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-    .project img {
-      width: 350px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-    .project-details {
-      max-width: 700px;
-    }
-    .project-details h3 {
-      margin-bottom: 10px;
-      font-size: 24px;
-    }
-    .project-details p {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       font-size: 18px;
     }
-    .project-details a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: #007BFF;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
+    h1, h2, h3 {
+      color: #222;
     }
-    .project-details a:hover {
-      background: #0056b3;
+    ul {
+      list-style: none;
+      padding: 0;
     }
-    footer {
-      background: #444;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
+    ul li {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .intro-text {
+      font-size: 22px;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto;
     }
     .contact {
-      background: #f4f4f4;
       text-align: center;
-      padding: 40px 20px;
     }
     .contact a {
-      margin: 0 15px;
-      color: #007BFF;
       text-decoration: none;
+      color: #333;
       font-size: 18px;
+      margin: 0 10px;
     }
     .contact a:hover {
-      text-decoration: underline;
+      color: #0073e6;
+    }
+    .social-icons img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="social-icons">
-      <a href="https://github.com/0yeaman" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/0yeaman" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
     <nav>
-      <a href="#projects">PROJECTS</a>
-      <a href="#about">ABOUT</a>
-      <a href="#contact">CONTACT</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
+    <img src="profile.jpg" alt="Amandeep Singh">
+    <h1>Amandeep Singh's Portfolio</h1>
+    <p class="intro-text">
+      Welcome! I'm Amandeep Singh, a Data Analyst passionate about transforming raw data into meaningful insights. 
+      With a strong foundation in SQL, Python, and visualization tools like Power BI and Tableau, 
+      I specialize in building real-time data applications, predictive models, and interactive dashboards. 
+      I bring proven experience in analyzing mortgage rates, customer sales trends, and developing AI-powered 
+      systems like face detection and fire ranger robotics.
+    </p>
   </header>
 
-  <section class="intro">
-    <h1>Welcome! I'm Amandeep Singh</h1>
-    <p>
-      A Data Analyst passionate about transforming raw data into meaningful insights.  
-      With a strong foundation in SQL, Python, and visualization tools like Power BI and Tableau,  
-      I specialize in building real-time data applications, predictive models, and interactive dashboards.  
-      I bring proven experience in analyzing mortgage rates, customer sales trends, and developing AI-powered systems  
-      such as face recognition and fire ranger robotics.
-    </p>
-  </section>
-
   <section id="projects">
-    <h2>PROJECTS</h2>
-
-    <div class="project">
-      <img src="images/ibrand.jpg" alt="iBrand Project">
-      <div class="project-details">
-        <h3>iBrand Project</h3>
-        <p>Containerized backend services with Docker for scalable deployment and integrated Kafka producers for real-time news article streaming.</p>
-        <a href="https://github.com/0yeaman/iBrand-Project" target="_blank">View Project</a>
-      </div>
-    </div>
-
-    <div class="project">
-      <img src="images/fraud.jpg" alt="Fraud Detection">
-      <div class="project-details">
-        <h3>Credit Card Fraud Detection</h3>
-        <p>Developed fraud detection models using neural networks to identify suspicious transactions and improve financial security.</p>
-        <a href="https://github.com/0yeaman/Credit-Card-Fraud-Detection" target="_blank">View Project</a>
-      </div>
-    </div>
-
-    <div class="project">
-      <img src="images/face.jpg" alt="Face Recognition">
-      <div class="project-details">
-        <h3>Face Recognition System</h3>
-        <p>Implemented a multi-class face classification system using MobileNetV2 and deployed it with Streamlit for real-time recognition.</p>
-        <a href="https://github.com/0yeaman/Face-Recognition" target="_blank">View Project</a>
-      </div>
-    </div>
-
-    <div class="project">
-      <img src="images/traffic.jpg" alt="RTTA">
-      <div class="project-details">
-        <h3>Real-Time Traffic Analysis (RTTA)</h3>
-        <p>Developed a system to analyze and visualize live traffic data, focusing on emergency vehicles, using Ontario 511 and Google Maps API.</p>
-        <a href="https://github.com/0yeaman/Real-Time-Traffic-Analysis" target="_blank">View Project</a>
-      </div>
-    </div>
-
-    <div class="project">
-      <img src="images/aipt.jpg" alt="AIPT">
-      <div class="project-details">
-        <h3>AI in Predictive Toxicology (AIPT)</h3>
-        <p>Built AI tools to predict drug toxicity early in drug development using PubChem and Tox21 datasets with Google Cloud Platform.</p>
-        <a href="https://github.com/0yeaman/AIPT" target="_blank">View Project</a>
-      </div>
-    </div>
-
-    <div class="project">
-      <img src="images/todo.jpg" alt="To-Do List App">
-      <div class="project-details">
-        <h3>To-Do List App</h3>
-        <p>Created a responsive To-Do List web application with task management features for productivity and planning.</p>
-        <a href="https://github.com/0yeaman/ToDo-App" target="_blank">View Project</a>
-      </div>
-    </div>
-
-    <div class="project">
-      <img src="images/fire.jpg" alt="Fire Ranger Robotics">
-      <div class="project-details">
-        <h3>Fire Ranger Robotics</h3>
-        <p>Designed and developed a robotic fire ranger capable of detecting and extinguishing fire using sensor technology.</p>
-        <a href="https://www.linkedin.com/in/0yeaman" target="_blank">View Project</a>
-      </div>
-    </div>
-
+    <h2>Projects & Experience</h2>
+    <ul>
+      <li>
+        <strong>Real-Time Traffic Analysis (RTTA)</strong><br>
+        Developed a system to analyze and visualize live traffic data with a focus on emergency vehicles. 
+        Integrated multiple data sources including Ontario 511 and Google Maps API to predict congestion 
+        and optimize routing in real-time.
+      </li>
+      <li>
+        <strong>AI in Predictive Toxicology (AIPT)</strong><br>
+        Built AI models to predict drug toxicity during early development phases. 
+        Leveraged PubChem and Tox21 datasets with machine learning for toxicity prediction, 
+        supporting safer drug discovery processes.
+      </li>
+      <li>
+        <strong>Credit Card Fraud Detection</strong> (<a href="https://github.com/Oyeamandeep/creditcard-fraud-pyspark" target="_blank">GitHub</a>)<br>
+        Implemented machine learning models with PySpark to detect fraudulent credit card transactions. 
+        Focused on feature engineering and class imbalance handling to improve prediction accuracy.
+      </li>
+      <li>
+        <strong>iBrand Project</strong> (<a href="https://github.com/LCM-S25-3035/iBrand" target="_blank">GitHub</a>)<br>
+        Contributed to backend development by containerizing services with Docker and integrating Kafka producers 
+        for real-time article streaming in a scalable environment.
+      </li>
+      <li>
+        <strong>Face Recognition System</strong><br>
+        Designed a multi-class face classification system using transfer learning (MobileNetV2) and traditional ML models. 
+        Built a Streamlit interface for deployment and real-time user interaction.
+      </li>
+      <li>
+        <strong>To-Do List Application</strong> (<a href="https://github.com/c0927648/AML_1214_Project" target="_blank">GitHub</a>)<br>
+        Created a command line-based To-Do List Manager that allows users to add, remove, view, and save tasks. 
+        Implemented file I/O for task persistence and advanced features like marking tasks as completed and sorting by status.
+      </li>
+      <li>
+        <strong>Fire Ranger Robot</strong><br>
+        Built a robotics system capable of detecting and extinguishing fire in real-time. 
+        Combined sensors, robotics control, and AI-powered decision-making for hazard management.
+      </li>
+    </ul>
   </section>
 
-  <section id="about">
-    <h2>ABOUT</h2>
-    <p style="text-align:center; max-width:800px; margin:auto; font-size:18px;">
-      I’m currently pursuing Big Data Analytics at Lambton College, Mississauga.  
-      I have experience in AI, ML, and data engineering tools, along with projects in finance, healthcare, and real-time systems.
-    </p>
-  </section>
-
-  <section id="contact" class="contact"> 
+  <section id="contact" class="contact">
     <h2>Contact Me</h2>
     <p>📍 Mississauga, ON, Canada</p>
-    <p>
-      <a href="https://github.com/0yeaman" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://linkedin.com/in/0yeaman" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      <a href="https://instagram.com/0yeaman_" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-    </p>
+    <div class="social-icons">
+      <p>
+        <a href="https://github.com/0yeaman" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub"> GitHub</a>
+        <a href="https://linkedin.com/in/0yeaman" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn"> LinkedIn</a>
+        <a href="https://instagram.com/0yeaman_" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram"> Instagram</a>
+      </p>
+    </div>
   </section>
-
-  <footer>
-    <p>&copy; 2025 Amandeep Singh. All rights reserved.</p>
-  </footer>
 
 </body>
 </html>
