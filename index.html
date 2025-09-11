@@ -3,25 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amandeep Singh | Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Amandeep Singh Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-gray-100 text-gray-800">
 
   <!-- Navbar -->
-  <header class="bg-white shadow-md fixed w-full z-10">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <!-- Social links left -->
-      <div class="flex space-x-4">
-        <a href="https://github.com/0yeaman" target="_blank" class="text-gray-700 hover:text-black text-2xl">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/amandeep-singh-bhawra" target="_blank" class="text-blue-700 hover:text-blue-900 text-2xl">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-      <!-- Right: Navigation -->
+  <header class="bg-gray-900 text-white p-4 flex justify-between items-center">
+    <!-- Left: Social Icons -->
+    <div class="flex items-center space-x-4">
+      <a href="https://github.com/0yeaman" target="_blank"><i class="fab fa-github text-2xl hover:text-blue-400"></i></a>
+      <a href="https://www.linkedin.com/in/amandeep-singh-bhawra" target="_blank"><i class="fab fa-linkedin text-2xl hover:text-blue-400"></i></a>
+    </div>
+    <!-- Right: Navigation -->
     <nav class="space-x-6">
       <a href="#about" class="hover:underline">About</a>
       <a href="#projects" class="hover:underline">Projects</a>
@@ -29,94 +24,71 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="pt-24 pb-16 bg-gradient-to-r from-blue-50 to-indigo-100 text-center">
-    <img src="profile.jpg" alt="Amandeep Singh" class="mx-auto w-40 h-40 rounded-full shadow-lg border-4 border-white">
-    <h2 class="mt-4 text-3xl font-bold">Amandeep Singh</h2>
-    <p class="mt-2 text-gray-700 max-w-2xl mx-auto">
-      Big Data Analyst |Electronics & Communcation Engineer
+  <!-- About Section -->
+  <section id="about" class="text-center py-10 bg-white shadow-md max-w-4xl mx-auto mt-6 rounded-lg">
+    <img src="profile.jpg" alt="Amandeep Singh" class="w-40 h-40 rounded-full mx-auto border-4 border-gray-300 mb-4">
+    <h1 class="text-3xl font-bold mb-4">Amandeep Singh's Portfolio</h1>
+    <p class="text-lg leading-relaxed max-w-2xl mx-auto">
+      Welcome! I'm Amandeep Singh, a Data Analyst passionate about transforming raw data into meaningful insights. 
+      With a strong foundation in SQL, Python, and visualization tools like Power BI and Tableau, I specialize in 
+      building real-time data applications, predictive models, and interactive dashboards.
     </p>
   </section>
 
   <!-- Projects Section -->
-  <section class="max-w-5xl mx-auto px-4 py-12">
-    <h3 class="text-2xl font-bold mb-6 text-center">Projects</h3>
+  <section id="projects" class="max-w-4xl mx-auto mt-10 bg-white p-6 rounded-lg shadow-md">
+    <h2 class="text-2xl font-bold mb-6">Projects & Experience</h2>
     <ul class="space-y-6">
-
       <li>
-        <strong>iBrand Project</strong> 
-        (<a href="https://github.com/LCM-S25-3035/iBrand" target="_blank">GitHub</a>)<br>
-        Containerized backend services using Docker and integrated Kafka producers for real-time 
-        news article streaming. Built a scalable pipeline for brand-related insights.
+        <strong>iBrand Project</strong> (<a href="https://github.com/LCM-S25-3035/iBrand" target="_blank" class="text-blue-600 hover:underline">GitHub</a>)<br>
+        Contributed to backend development by containerizing services with Docker and integrating Kafka producers 
+        for real-time article streaming in a scalable environment.
       </li>
-
       <li>
-        <strong>Credit Card Fraud Detection</strong> 
-        (<a href="https://github.com/Oyeamandeep/creditcard-fraud-pyspark" target="_blank">GitHub</a>)<br>
-        Applied deep learning techniques to detect fraudulent credit card transactions. 
-        Implemented neural networks and anomaly detection for financial security.
+        <strong>Credit Card Fraud Detection</strong> (<a href="https://github.com/Oyeamandeep/creditcard-fraud-pyspark" target="_blank" class="text-blue-600 hover:underline">GitHub</a>)<br>
+        Implemented machine learning models with PySpark to detect fraudulent credit card transactions. 
+        Focused on feature engineering and class imbalance handling to improve prediction accuracy.
       </li>
-
       <li>
-        <strong>Face Recognition System</strong> 
-        (<a href="https://github.com/0yeaman/Face-Recognition-System" target="_blank">GitHub</a> | 
-         <a href="https://youtu.be/pd09RQ9wXe4" target="_blank">Demo</a>)<br>
-        Multi-class face classification using MobileNetV2 with transfer learning. 
-        Deployed via Streamlit app with support for real-time recognition.
+        <strong>Face Recognition System</strong> (<a href="https://github.com/0yeaman/Face-Recognition-System" target="_blank" class="text-blue-600 hover:underline">GitHub</a>)<br>
+        Designed a multi-class face classification system using transfer learning (MobileNetV2) and traditional ML models. 
+        Built a Streamlit interface for deployment and real-time user interaction.
       </li>
-
       <li>
-        <strong>Real-Time Traffic Analysis (RTTA)</strong> 
-        (<a href="https://github.com/Andressanta09/Project_Aplication_Designe" target="_blank">GitHub</a>)<br> 
+        <strong>Real-Time Traffic Analysis (RTTA)</strong> (<a href="https://github.com/Andressanta09/Project_Aplication_Designe" target="_blank" class="text-blue-600 hover:underline">GitHub</a>)<br>
         Developed a system to analyze and visualize live traffic data with a focus on emergency vehicles. 
         Integrated multiple data sources including Ontario 511 and Google Maps API to predict congestion 
         and optimize routing in real-time.
       </li>
-
       <li>
-        <strong>AI in Predictive Toxicology (AIPT)</strong> 
-        (<a href="https://github.com/Jrodriguez8004/AI-project-Predictive-Toxicology-" target="_blank">GitHub</a>)<br>
+        <strong>AI in Predictive Toxicology (AIPT)</strong> (<a href="https://github.com/Jrodriguez8004/AI-project-Predictive-Toxicology-" target="_blank" class="text-blue-600 hover:underline">GitHub</a>)<br>
         Built AI models to predict drug toxicity during early development phases. 
         Leveraged PubChem and Tox21 datasets with machine learning for toxicity prediction, 
         supporting safer drug discovery processes.
       </li>
-
       <li>
-        <strong>To-Do App</strong> 
-        (<a href="https://github.com/c0927648/AML_1214_Project" target="_blank">GitHub</a>)<br>
-        Designed a simple productivity app with task creation, tracking, and completion features. 
-        Focused on clean UI and efficient state management.
+        <strong>To-Do List Application</strong> (<a href="https://github.com/c0927648/AML_1214_Project" target="_blank" class="text-blue-600 hover:underline">GitHub</a>)<br>
+        Created a command line-based To-Do List Manager that allows users to add, remove, view, and save tasks. 
+        Implemented file I/O for task persistence and advanced features like marking tasks as completed and sorting by status.
       </li>
-
       <li>
-        <strong>Fire Ranger Robot</strong> 
-        (<a href="https://github.com/0yeaman/Fire-Ranger-Robot" target="_blank">GitHub</a> | 
-         <a href="https://youtu.be/Sj__Mqav5lg" target="_blank">Demo</a>)<br>
-        Built an autonomous fire ranger robot equipped with sensors and automation for fire detection 
-        and extinguishing. Designed for safety-critical operations.
+        <strong>Fire Ranger Robot</strong> (<a href="https://github.com/0yeaman/Fire-Ranger-Robot" target="_blank" class="text-blue-600 hover:underline">GitHub</a>)<br>
+        Built a robotics system capable of detecting and extinguishing fire in real-time. 
+        Combined sensors, robotics control, and AI-powered decision-making for hazard management.
       </li>
-
     </ul>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact bg-white py-12 text-center">
+  <section id="contact" class="contact text-center py-10 bg-white shadow-md max-w-4xl mx-auto mt-10 rounded-lg">
     <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
     <p>📍 Mississauga, ON, Canada</p>
-    <p class="mt-2 space-x-4">
-      <a href="https://github.com/0yeaman" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://www.linkedin.com/in/amandeep-singh-bhawra" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      <a href="https://instagram.com/0yeaman_" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    <p class="mt-4 space-x-6">
+      <a href="https://github.com/0yeaman" target="_blank" class="text-gray-700 hover:text-blue-600"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/amandeep-singh-bhawra" target="_blank" class="text-gray-700 hover:text-blue-600"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://instagram.com/0yeaman_" target="_blank" class="text-gray-700 hover:text-pink-500"><i class="fab fa-instagram"></i> Instagram</a>
     </p>
   </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-100 py-6 text-center">
-    <p>&copy; 2025 Amandeep Singh | 
-      <a href="https://github.com/0yeaman" target="_blank" class="text-gray-700 hover:underline">GitHub</a> | 
-      <a href="https://www.linkedin.com/in/amandeep-singh-bhawra" target="_blank" class="text-blue-700 hover:underline">LinkedIn</a>
-    </p>
-  </footer>
 
 </body>
 </html>
